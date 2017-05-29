@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javalibraryfinal.ui.listMember.MemberListController">
+    <stylesheets>
+        <URL value="@list_member.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tableView" layoutX="71.0" layoutY="122.0" prefHeight="522.0" prefWidth="671.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="indexCol" prefWidth="75.0" text="Index" />
+            <TableColumn fx:id="fnameCol" prefWidth="75.0" text="First Name" />
+            <TableColumn fx:id="lnameCol" prefWidth="75.0" text="Last Name" />
+            <TableColumn fx:id="regCol" prefWidth="75.0" text="Reg Number" />
+            <TableColumn fx:id="genderCol" prefWidth="75.0" text="Gender" />
+            <TableColumn fx:id="mobileCol" prefWidth="75.0" text="Mobile" />
+            <TableColumn fx:id="emailCol" prefWidth="75.0" text="Email" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
